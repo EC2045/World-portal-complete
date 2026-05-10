@@ -943,7 +943,7 @@
         url: 'https://ec2045.github.io/onva_culture',
         tags: ['文化', '生活', '伝統']
       },
-            {
+      {
         name: 'onva-history',
         jp: 'onva語・歴史資料',
         type: 'archive',
@@ -1064,6 +1064,26 @@
         tags: ['マニフェスト', '芸術', 'ログ']
       },
       {
+        name: 'ArtR x T.S. Archive',
+        jp: 'ArtR x T.S. 対話記録',
+        type: 'archive',
+        category: 'ログ / 対話',
+        status: 'green',
+        summary: 'Artist RとT.S.の対話記録。バイナリの使途や和音陣国に隠された「問い」が記録されている。',
+        url: 'https://ec2045.github.io/artr-ts/',
+        tags: ['対話', '記録', 'アーカイブ']
+      },
+      {
+        name: "Rittsu's Blog",
+        jp: "Rittsu's - 過去の記憶",
+        type: 'person',
+        category: '個人 / アーカイブ',
+        status: 'green',
+        summary: 'Rの称号を受け継ぐりっつーのブログ。過去の記憶やメイとの出会いの記録。',
+        url: 'https://ec2045.github.io/rittu-blog/',
+        tags: ['ブログ', '記録', '人物']
+      },
+      {
         name: 'WEN',
         jp: '和温陣国公式放送局',
         type: 'project',
@@ -1084,7 +1104,7 @@
         tags: ['宗教', '練り消し', '経典']
       }
     ];
-    
+
 
     const icons = {
       organization: '◼',
@@ -1159,12 +1179,12 @@
     sort.addEventListener('change', render);
 
     // 初期化
-    window.onload = function() {
+    window.onload = function () {
       // ローダー解除
       setTimeout(() => {
         loader.classList.add('hide');
       }, 900);
-      
+
       // 最初のレンダリング
       render();
     };
